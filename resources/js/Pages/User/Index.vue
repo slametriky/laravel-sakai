@@ -88,7 +88,7 @@ watch(
                 :user="data.user"
                 :title="props.title"
             />
-            <Button label="Create" @click="data.createOpen = true" icon="pi pi-plus" />
+            <Button v-show="can(['create user'])" label="Create" @click="data.createOpen = true" icon="pi pi-plus" />
             <DataTable lazy :value="users.data" paginator  :rows="users.per_page" :totalRecords="users.total" :first="(users.current_page - 1) * users.per_page"   @page="onPageChange"  tableStyle="min-width: 50rem">
                 <template #header>
                     <div class="flex justify-end">
@@ -120,10 +120,10 @@ watch(
                 <Column field="updated_at" header="Updated"></Column>
                 <Column :exportable="false" style="min-width: 12rem">
                     <template #body="slotProps">
-                        <Button icon="pi pi-pencil" outlined rounded class="mr-2"  @click="
+                        <Button v-show="can(['update user'])" icon="pi pi-pencil" outlined rounded class="mr-2"  @click="
                                                     (data.editOpen = true),
                                                         (data.user = slotProps.data)" />
-                        <Button icon="pi pi-trash" outlined rounded severity="danger" @click="deleteDialog = true; data.user = slotProps.data" />
+                        <Button v-show="can(['delete user'])" icon="pi pi-trash" outlined rounded severity="danger" @click="deleteDialog = true; data.user = slotProps.data" />
                     </template>
                 </Column>
             </DataTable>
