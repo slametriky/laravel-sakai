@@ -45,7 +45,7 @@ const submit = () => {
                     <form @submit.prevent="submit">
                         <div>
                             <label for="email1" class="block text-surface-900 dark:text-surface-0 text-xl font-medium mb-2">Email</label>
-                            <InputText id="email1" type="text" placeholder="Email address" class="w-full md:w-[30rem] mb-4" v-model="form.email" />
+                            <InputText id="email1" type="text" placeholder="Email" class="w-full md:w-[30rem] mb-4" v-model="form.email" />
                             <Message v-if="form.errors.email" class="mb-4" severity="error">{{ form.errors.email }}</Message>
 
                             <label for="password1" class="block text-surface-900 dark:text-surface-0 font-medium text-xl mb-2">Password</label>
