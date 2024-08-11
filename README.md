@@ -10,7 +10,7 @@ Built using using laravel 10, inertia, vue 3 and Sakai admin template.
   <img alt="Add User" src="https://i.postimg.cc/7YTKbwgc/add-user.png" width="45%">&nbsp;
   <img alt="Add User" src="https://i.postimg.cc/vDRL5xWK/delete-user.png" width="45%">&nbsp; 
   <img alt="Role" src="https://i.postimg.cc/tgRfs8Rx/permission.png" width="45%">
-  <img alt="Permission" src="https://i.postimg.cc/tgRfs8Rx/permission.png" width="45%">
+  <img alt="Permission" src="https://i.postimg.cc/VNNGfM49/list-permission.png" width="45%">
 </p>
 
 # Features
