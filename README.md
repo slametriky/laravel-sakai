@@ -15,6 +15,7 @@ Built using using laravel 10, inertia, vue 3 and Sakai admin template.
 
 # Features
 - Reusable Component base on Primevue
+- SPA (Single Page Application)
 - Role Based Access Control
 - Responsive Design
 - Modal Form
@@ -24,7 +25,8 @@ Built using using laravel 10, inertia, vue 3 and Sakai admin template.
 # Requirements
 - PHP 8.2
 - Composer
-- Mysql
+- Node.js 18 or Above
+- Mysql / Postgree SQL
 
 # Installation
 ``` bash
