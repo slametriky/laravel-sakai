@@ -30,8 +30,8 @@ Built using using laravel 10, inertia, vue 3 and Sakai admin template.
 
 # Installation
 ``` bash
-git clone https://github.com/slametriky/laravelsakai.git
-cd laravelsakai
+git clone https://github.com/slametriky/laravel-sakai.git
+cd laravel-sakai
 composer install
 npm install
 cp .env.example .env
